@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<title>Pepperbox Coffee</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="https://www.bovav.com/BlackLogoTrans_favicon.ico?v=2" />
+<!--http://fontawesome.io/icons/-->
+<style>
+pepperbox coffee
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('/images/trailer.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url('/images/pepperbox_shot_art.jpg');
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url('/images/marlboro.jpeg');
+    min-height: 400px;
+}
+
+/* Fourth image (Gears) */
+.bgimg-4 {
+    background-image: url('https://pbs.twimg.com/media/C-bG6rgXcAESxBH.jpg');
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 720px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-white w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-white w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#menu" class="w3-bar-item w3-white w3-button w3-hide-small"><i class="fa fa-th"></i> MENU</a>
+    <a href="#gears" class="w3-bar-item w3-white w3-button w3-hide-small"><i class="fa fa-gears"></i> GEARS</a>
+    <a href="#contact" class="w3-bar-item w3-white w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#menu" class="w3-bar-item w3-button" onclick="toggleFunction()">MENU</a>
+    <a href="#gears" class="w3-bar-item w3-button" onclick="toggleFunction()">GEARS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
+    <img src="/images/pepperboxcoffee_white.png" class="w3-round w3-image " alt="Pepperbox Coffee" width="1080" height="333">
+    </span>
+	  <!--
+	   <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+    		<img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+	  -->
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">THE TALE BEGINS</h3>
+  <p class="w3-center"><em>Coffee with a Bang!</em></p>
+  <p>
+    <p>Pepperbox Coffee was born after a dream was conceived during one starry night in Texas. Mario and Nick, the owners, were being warmed by a crackling fire when the smoke led their eyes towards the sky. A shooting star streaked across the sky, igniting an inspiration.
+    </p>
+    <p>Pepperbox Coffee was created in response to the unemployment crisis that the Deaf and Hard of Hearing population faces. The majority of the population struggle with unemployment, due to lack of training and job experience along with communication barriers. The Deaf co-owners, Mario Essig and Nicholas Buchanan, wanted to demonstrate that the barriers in place do not define the intelligence, heart, and talents of the Deaf and Hard of Hearing community. They are excited to share their talents in the marketplace and provide the fastest, friendliest and the most generous handcraft coffee service for your convenience.
+    </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Nicholas Buchanan</b></p><br>
+      <img src="/images/NickHeadShot.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Nicholas Buchanan" width="250" height="166">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+	    <p>I bring unique experience to Pepperbox Coffee.</p>
+
+	    <p>Seattle is my home town, whs brewed up the coffee madness. Because the Pacific Northwest is a hotbed of coffee drive-thru establishments, I have lived through various coffee atmospheres which has impacted my coffee cuppings.</p>
+
+	    <p>I now live in Texas and want to bring the best of Seattle to Austin. In addition to the desire to introduce the coffee express style to town, I also believe that with my software development background a coffee self-ordering system would bring an unique experience for our customers in the future.</p>
+
+	    <p>As a deaf person, I have the vision of running my own business and also prove that being deaf does not and will not be a hindrance in being a successful entrepreneur. I believe that with my contribution, hard work and perseverance, it will lead toward opportunities for the deaf communities. My passion is in the coffee industry. Because of the passion, I firmly believe I will be successful. </p>
+
+	    <p>Lastly, I am a proud father to two beautiful kids and a husband to a wonder wife.</p>
+    </div>
+  </div>
+  <div class="w3-row">
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+	    <p>When I dove into Pepperbox Coffee, I had no idea what I was getting myself into. I have always aspired to own a business and this is it. It's exciting to see a dream fulfilled!</p>
+
+	    <p>Growing up in Washington State, there are literally coffee shops on nearly every corner, alongside Starbucks. However, I have seen how people still are loyal to local coffee shops and appreciate that the culture of local coffee shops are more authentic and personal. That is what I want to bring to Austin.</p>
+	    <p>By bringing my business knowledge and experience to Pepperbox Coffee, I am confident that the company will take off with a joyful cup of coffee!</p>
+
+	    <p>Quick facts about me: loves walking with Jesus, has a lovely wife, loves playing soccer, freedives, riding on his Nightcrawler and loves pandas!</p>
+    </div>
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Mario Essig</b></p><br>
+      <img src="/images/MEHeadshot.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Mario Essig" width="250" height="166">
+    </div>
+
+  </div>
+  <!--
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+  -->
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">MENU</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="menu">
+  <p class="w3-center"><em>We emphasize on houesmade ingredients ranging from chai, to milk, to whip.</em></p>
+  <p class="w3-center"><em>All our beverages and foods are made with care and use natural ingredients wherever applicable.</em></p><br>
+
+  <h3 class="w3-center">MENU</h3>
+  <p class="w3-center w3-padding"><em>Pick your drink: Specialty or the General Store!</em></p><br>
+  <div class="w3-row-padding w3-center" width="500px">
+    <div class="w3-col m6">
+      <img src="/images/drivethru_menu_front.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Specialty Menu">
+    </div>
+    <div class="w3-col m6" width="500px">
+      <img src="/images/drivethru_menu_back.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="General Store Menu">
+    </div>
+  </div>
+
+  <h3 class="w3-center">DRINKS</h3>
+  <h4 class="w3-center">Coffee with a Bang!</h4>
+  <p class="w3-center"><em>Click on the images to make them bigger</em></p>
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="/images/drinks/pepperbox_shot.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Pepperbox Shot">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/drinks/harry.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dirty Harry">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/drinks/doc_holliday.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Doc Holliday">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/drinks/Ringo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ringo">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/images/drinks/gatling_gun.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Gatling Gun">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/drinks/gold_digger.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Gold Digger">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/drinks/dynamite.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dynamite">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/drinks/the_fuse.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Fuse">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/images/drinks/mechanical_bull.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Mechanical Bull">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/drinks/Calamity_Jane.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Calamity Jane">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/drinks/pumpkin_latte.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Feast of all Saints">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/images/drinks/coal_mint.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coal Mint">
+    </div>
+  </div>
+
+  <!-- PASTRIES -->
+  <h3 class="w3-center">PASTRIES</h3>
+  <p class="w3-center"><em>Pastries with a Bang!<br> Click on the images to make them bigger</em></p><br>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <img src="/images/pastries/garlic_bagel.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Garlic Bagel">
+    </div>
+
+    <div class="w3-col m4">
+      <img src="/images/pastries/rosemary_salt_bagel.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rosemary Salt Bagel">
+    </div>
+
+    <div class="w3-col m4">
+      <img src="/images/pastries/everything_bagel.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Everything Bagel">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m4">
+      <img src="/images/pastries/blueberry_muffin.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Blueberry Muffin">
+    </div>
+
+    <div class="w3-col m4">
+      <img src="/images/pastries/iced_cinnamon_roll.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Iced Cinnamon Roll">
+    </div>
+
+    <div class="w3-col m4">
+      <img src="/images/pastries/marvelous_morning_muffin.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Marvelous Morning Muffin">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m4">
+      <img src="/images/pastries/bagel_dog.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bagel Dog">
+    </div>
+
+    <div class="w3-col m4">
+      <img src="/images/pastries/banana_nut_slice.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Banana Nut Slice">
+    </div>
+
+    <div class="w3-col m4">
+      <img src="/images/pastries/chocolate_croissant.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Chocolate Croissant">
+    </div>
+    <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>-->
+  </div>
+
+  <!-- ORDERING -->
+  <h3 class="w3-center">ORDERING</h3>
+  <p class="w3-center w3-padding"><em>Dry-Erasable menu. Create your combo drink at Pepperbox Coffee!</em></p><br>
+  <div class="w3-row-padding w3-center" width="500px">
+    <div class="w3-col m6">
+      <img src="/images/Customer_menu_showcase.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Customer Menu">
+    </div>
+    <div class="w3-col m6" width="500px">
+      <img src="/images/ordering.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Customer Ordering Process">
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">GEARS</span>
+  </div>
+</div>
+
+<!-- Container (Gears Section) -->
+<div class="w3-content w3-container w3-padding-64" id="gears">
+  <h3 class="w3-center">CLOTHING FOR OUR FANS</h3>
+  <!--<p class="w3-center"><em>I'd love your feedback!</em></p>-->
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m4">
+      <div id='product-component-1514472263598'></div>
+    </div>
+    <div class="w3-col m4">
+      <div id='product-component-bea814e28fa'></div>
+    </div>
+    <div class="w3-col m4">
+      <div id='product-component-60a65c95521'></div>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m4">
+      <div id='product-component-21e90920558'></div>
+    </div>
+    <div class="w3-col m4">
+      <div id='product-component-c2686e3eb91'></div>
+    </div>
+  </div>
+
+  <h3 class="w3-center">DRINKWARES</h3>
+  <!--<p class="w3-center"><em>Coming Soon!</em></p>-->
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m6">
+      <div id='product-component-1514485338489'></div>
+    </div>
+  </div>
+
+  <h3 class="w3-center">COFFEE BEAN BAGS</h3>
+  <p class="w3-center"><em>Email us for a bag or three at <u><b>pepperboxcoffee@gmail.com</b></u></em></p>
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m5">
+      <img src="/images/5LB_Special_Dark_Blend.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="5 LB bags">
+    </div>
+    <div class="w3-col m3">
+      <img src="/images/special_dark_blend_sticker_12oz.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Special Dark Blend">
+    </div>
+    <div class="w3-col m3">
+      <img src="/images/derringer_dark_decaf_sticker_12oz.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Derringer Dark Decaf">
+    </div>
+  </div>
+  <p class="w3-center">We carry 5 LB and 12 oz bags. Contact us and we will set up an order request.</p>
+
+</div>
+
+<!-- Fourth Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE WE ARE</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 4001 Medical Pkwy Austin, TX 78756<br>
+	<!-- <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br> -->
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: pepperboxcoffee@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i></p>
+      <!-- EMAIL FORM IMPLEMENTATION
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+      -->
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/pepperboxcoffee/"><i class="fa fa-facebook-official w3-hover-opacity w3-border-0"></i></a>
+    <a href="https://www.instagram.com/pepperbox.coffee/"><i class="fa fa-instagram w3-hover-opacity w3-border-0"></i></a>
+    <!--<i class="fa fa-snapchat w3-hover-opacity"></i>-->
+    <!--<i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
+    <a href="https://twitter.com/PepperboxCoffee"><i class="fa fa-twitter w3-hover-opacity w3-border-0"></i></a>
+    <a href="https://www.youtube.com/channel/UCM5Mn2YRtvTGxLpKROgj0gg"><i class="fa fa-youtube w3-hover-opacity w3-border-0"></i></a>
+    <!--<i class="fa fa-linkedin w3-hover-opacity"></i>-->
+  </div>
+  <p>Pepperbox Coffee Est. 2016</p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(30.30880191298887, -97.74463888399198);
+  var mapOptions= {
+    center: myCenter,
+    zoom:12,
+    scrollwheel: false,
+    draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  var navbar = document.getElementById("myNavbar");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+  } else {
+    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+  }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4NOx6TtWcxf_taqacAHPsQmxV8ELj5Pw&callback=myMap">
+</script>
+
+<script async defer type="text/javascript"
+  src="/scripts/stylin66.js">
+</script>
+
+</body>
+</html>
+
