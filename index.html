@@ -18,7 +18,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,14 +37,20 @@ body, html {
     min-height: 400px;
 }
 
-/* Third image (Contact) */
+/* Third image (Gears) */
 .bgimg-3 {
     background-image: url('/images/marlboro.jpeg');
     min-height: 400px;
 }
 
-/* Fourth image (Gears) */
+/* Fourth image (Catering) */
 .bgimg-4 {
+    background-image: url('/images/pasttime.png');
+    min-height: 400px;
+}
+
+/* Fourth image (Contact) */
+.bgimg-5 {
     background-image: url('https://pbs.twimg.com/media/C-bG6rgXcAESxBH.jpg');
     min-height: 400px;
 }
@@ -54,7 +60,7 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 720px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
         background-attachment: scroll;
     }
 }
@@ -71,6 +77,7 @@ body, html {
     <a href="#about" class="w3-bar-item w3-white w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#menu" class="w3-bar-item w3-white w3-button w3-hide-small"><i class="fa fa-th"></i> MENU</a>
     <a href="#gears" class="w3-bar-item w3-white w3-button w3-hide-small"><i class="fa fa-gears"></i> GEARS</a>
+    <a href="#catering" class="w3-bar-item w3-white w3-button w3-hide-small"><i class="fa fa-truck"></i> CATERING</a>
     <a href="#contact" class="w3-bar-item w3-white w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
   </div>
 
@@ -79,20 +86,17 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#menu" class="w3-bar-item w3-button" onclick="toggleFunction()">MENU</a>
     <a href="#gears" class="w3-bar-item w3-button" onclick="toggleFunction()">GEARS</a>
+    <a href="#catering" class="w3-bar-item w3-button" onclick="toggleFunction()">CATERING</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+<!-- First Parallax Image with About Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity">
     <img src="/images/pepperboxcoffee_white.png" class="w3-round w3-image " alt="Pepperbox Coffee" width="1080" height="333">
     </span>
-	  <!--
-	   <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
-    		<img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-	  -->
   </div>
 </div>
 
@@ -176,14 +180,14 @@ body, html {
   -->
 </div>
 
-<!-- Second Parallax Image with Portfolio Text -->
+<!-- Second Parallax Image with Menu Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">MENU</span>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
+<!-- Container (Menu Section) -->
 <div class="w3-content w3-container w3-padding-64" id="menu">
   <p class="w3-center"><em>We emphasize on houesmade ingredients ranging from chai, to milk, to whip.</em></p>
   <p class="w3-center"><em>All our beverages and foods are made with care and use natural ingredients wherever applicable.</em></p><br>
@@ -327,7 +331,7 @@ body, html {
   </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
+<!-- Third Parallax Image with Gears Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">GEARS</span>
@@ -364,6 +368,9 @@ body, html {
     <div class="w3-col m6">
       <div id='product-component-1514485338489'></div>
     </div>
+    <div class="w3-col m6">
+      <div id='product-component-ccc3f842ec0'></div>
+    </div>
   </div>
 
   <h3 class="w3-center">COFFEE BEAN BAGS</h3>
@@ -383,8 +390,60 @@ body, html {
 
 </div>
 
-<!-- Fourth Parallax Image with Portfolio Text -->
+<!-- Fourth Parallax Image with Catering Text -->
 <div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CATERING</span>
+  </div>
+</div>
+
+<!-- Container (Catering Section) -->
+<div class="w3-content w3-container w3-padding-64" id="catering">
+  <h3 class="w3-center">PEPPERBOX COFFEE CATERING</h3>
+  <p class="w3-center"><em>Catering with a Bang!</em></p>
+  <div class="w3-row w3-padding-32 w3-center">
+		<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><b>Email:</b> catering@pepperboxcoffee.com<br>
+		<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><b>Text:</b> 512.710.8381<br>
+    <div class="w3-col m12">
+		  <p>We cater at weddings, festivals, fundraising events, schools, lounges, and more!</p>
+			<p>All our catering services can be called up any time during the week whether it is a small or big.</p>
+    </div>
+    <div class="w3-col m12">
+			<p><b>payments</b> We accepts cash, debit and credit cards.</p>
+      <p>Or, billing through Net-15 and Net-30 payment invoices.</p>
+    </div>
+  </div>
+  <div class="w3-row w3-padding-32 w3-center">
+    <div class="w3-col m12">
+      <h2>By the Hour</h2>
+      <hr size="30"/>
+    </div>
+    <div class="w3-col m12">
+      <p>$200 first two hours, $150 every hour afterwards. 1 Barista.</p>
+    </div>
+    <div class="w3-col m12">
+      <p>$375 first two hours, $225 every hour afterwards. 2 Barista.</p>
+    </div>
+    <div class="w3-col m12">
+      <p>$500 first two hours, $300 every hour afterwards. 3 Barista.</p>
+    </div>
+  </div>
+  <div class="w3-row w3-padding-32 w3-center">
+		<h2>Fundraising and Events</h2>
+		<hr size="30"/>
+  	<div class="w3-row w3-padding-32 w3-center">
+    	<div class="w3-col m12">
+      	<p>Minimum of 200 person attendance</p>
+    	</div>
+    	<div class="w3-col m12">
+      	<p>Contact us for payment plan and contribution from donations</p>
+    	</div>
+  	</div>
+	</div>
+</div>
+
+<!-- Fifth Parallax Image with Contact Text -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
   </div>

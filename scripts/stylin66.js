@@ -361,6 +361,145 @@
         moneyFormat: '${{amount}}',
         options: {"product":{"layout":"horizontal","variantId":"all","width":"100%","contents":{"img":false,"imgWithCarousel":true,"variantTitle":false,"description":true,"buttonWithQuantity":false,"quantity":false},"styles":{"product":{"text-align":"left","@media (min-width: 601px)":{"max-width":"100%","margin-left":"0","margin-bottom":"50px"}},"title":{"font-size":"26px"},"price":{"font-size":"18px"},"compareAt":{"font-size":"15px"}}},"cart":{"contents":{"button":true},"styles":{"footer":{"background-color":"#ffffff"}}},"modalProduct":{"contents":{"img":false,"imgWithCarousel":true,"variantTitle":false,"buttonWithQuantity":true,"button":false,"quantity":false},"styles":{"product":{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"0px","margin-bottom":"0px"}}}},"productSet":{"styles":{"products":{"@media (min-width: 601px)":{"margin-left":"-20px"}}}}},
       });
+
+      // Campfire Mug
+      ui.createComponent('product', {
+        id: [1011979157547],
+        node: document.getElementById('product-component-ccc3f842ec0'),
+        moneyFormat: '${{amount}}',
+	options: {
+	  "product": {
+	    "buttonDestination": "checkout",
+	    "variantId": "all",
+	    "contents": {
+	      "imgWithCarousel": false,
+	      "variantTitle": false,
+	      "description": false,
+	      "buttonWithQuantity": true,
+	      "button": false,
+	      "quantity": false
+	    },
+	    "text": {
+	      "button": "BUY NOW"
+	    },
+	    "styles": {
+	      "product": {
+		"@media (min-width: 601px)": {
+		  "max-width": "100%",
+		  "margin-left": "0",
+		  "margin-bottom": "50px"
+		}
+	      },
+	      "button": {
+		"font-size": "15px",
+		"padding-top": "15.5px",
+		"padding-bottom": "15.5px",
+		":hover": {
+		  "background-color": "#6ca44e"
+		},
+		":focus": {
+		  "background-color": "#6ca44e"
+		}
+	      },
+	      "quantityInput": {
+		"font-size": "15px",
+		"padding-top": "15.5px",
+		"padding-bottom": "15.5px"
+	      },
+	      "compareAt": {
+		"font-size": "12px"
+	      }
+	    }
+	  },
+	  "cart": {
+	    "contents": {
+	      "button": true
+	    },
+	    "styles": {
+	      "button": {
+		"font-size": "15px",
+		"padding-top": "15.5px",
+		"padding-bottom": "15.5px",
+		":hover": {
+		  "background-color": "#6ca44e"
+		},
+		":focus": {
+		  "background-color": "#6ca44e"
+		}
+	      },
+	      "footer": {
+		"background-color": "#ffffff"
+	      }
+	    }
+	  },
+	  "modalProduct": {
+	    "contents": {
+	      "img": false,
+	      "imgWithCarousel": true,
+	      "variantTitle": false,
+	      "buttonWithQuantity": true,
+	      "button": false,
+	      "quantity": false
+	    },
+	    "styles": {
+	      "product": {
+		"@media (min-width: 601px)": {
+		  "max-width": "100%",
+		  "margin-left": "0px",
+		  "margin-bottom": "0px"
+		}
+	      },
+	      "button": {
+		"font-size": "15px",
+		"padding-top": "15.5px",
+		"padding-bottom": "15.5px",
+		":hover": {
+		  "background-color": "#6ca44e"
+		},
+		":focus": {
+		  "background-color": "#6ca44e"
+		}
+	      },
+	      "quantityInput": {
+		"font-size": "15px",
+		"padding-top": "15.5px",
+		"padding-bottom": "15.5px"
+	      }
+	    }
+	  },
+	  "toggle": {
+	    "styles": {
+	      "toggle": {
+		":hover": {
+		  "background-color": "#6ca44e"
+		},
+		":focus": {
+		  "background-color": "#6ca44e"
+		}
+	      },
+	      "count": {
+		"font-size": "15px",
+		"color": "#ffffff",
+		":hover": {
+		  "color": "#ffffff"
+		}
+	      },
+	      "iconPath": {
+		"fill": "#ffffff"
+	      }
+	    }
+	  },
+	  "productSet": {
+	    "styles": {
+	      "products": {
+		"@media (min-width: 601px)": {
+		  "margin-left": "-20px"
+		}
+	      }
+	    }
+	  }
+	}
+      });
     });
   }
 })();
